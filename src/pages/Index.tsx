@@ -5,12 +5,12 @@ import { Progress } from '@/components/ui/progress';
 import Icon from '@/components/ui/icon';
 
 const mockPlayers = [
-  { id: 1, name: 'EnDay01', kills: 1543, deaths: 432, playtime: '234ч', level: 87, online: true },
-  { id: 2, name: 'Kamelia07', kills: 1287, deaths: 389, playtime: '198ч', level: 76, online: true },
-  { id: 3, name: 'kfcasdw', kills: 1156, deaths: 456, playtime: '176ч', level: 72, online: false },
-  { id: 4, name: 'paata1234', kills: 1089, deaths: 412, playtime: '165ч', level: 69, online: true },
-  { id: 5, name: 'kors666', kills: 987, deaths: 378, playtime: '152ч', level: 65, online: false },
-  { id: 6, name: 'BleW', kills: 934, deaths: 401, playtime: '143ч', level: 62, online: true },
+  { id: 1, name: 'EnDay01', kills: 59, deaths: 17, playtime: '23ч', level: 87, online: true },
+  { id: 2, name: 'Kamelia07', kills: 1, deaths: 31, playtime: '9ч', level: 76, online: true },
+  { id: 3, name: 'kfcasdw', kills: 4, deaths: 3, playtime: '6ч', level: 72, online: false },
+  { id: 4, name: 'paata1234', kills: 2, deaths: 11, playtime: '3ч', level: 69, online: true },
+  { id: 5, name: 'kors666', kills: 0, deaths: 0, playtime: '0ч', level: 1, online: false },
+  { id: 6, name: 'BleW', kills: 18, deaths: 7, playtime: '10ч', level: 62, online: true },
 ];
 
 const Index = () => {
