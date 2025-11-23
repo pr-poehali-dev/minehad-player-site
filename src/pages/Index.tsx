@@ -5,12 +5,66 @@ import { Progress } from '@/components/ui/progress';
 import Icon from '@/components/ui/icon';
 
 const mockPlayers = [
-  { id: 1, name: 'EnDay01', kills: 59, deaths: 17, playtime: '23ч', level: 87, online: true },
-  { id: 2, name: 'Kamelia07', kills: 1, deaths: 31, playtime: '9ч', level: 76, online: true },
-  { id: 3, name: 'kfcasdw', kills: 4, deaths: 3, playtime: '6ч', level: 72, online: false },
-  { id: 4, name: 'paata1234', kills: 2, deaths: 11, playtime: '3ч', level: 69, online: true },
-  { id: 5, name: 'kors666', kills: 0, deaths: 0, playtime: '0ч', level: 1, online: false },
-  { id: 6, name: 'BleW', kills: 18, deaths: 7, playtime: '10ч', level: 62, online: true },
+  { 
+    id: 1, 
+    name: 'EnDay01', 
+    kills: 59, 
+    deaths: 17, 
+    playtime: '23ч', 
+    level: 87, 
+    online: true,
+    description: 'Стример и блогер по серверу MINEHAD любитель строить. Игрок харош в пвп и в пве. Очень быстро реализовывает проекты.'
+  },
+  { 
+    id: 2, 
+    name: 'Kamelia07', 
+    kills: 1, 
+    deaths: 31, 
+    playtime: '9ч', 
+    level: 76, 
+    online: true,
+    description: 'Очень любит животных! Лучше всех справляется в добыче животных. Не любит пвп, старается избегать его. Самый безопасный и дружелюбный игрок на сервере.'
+  },
+  { 
+    id: 3, 
+    name: 'kfcasdw', 
+    kills: 4, 
+    deaths: 3, 
+    playtime: '6ч', 
+    level: 72, 
+    online: false,
+    description: 'Куча идей которые ему не терпится реализовать! Быстрее всех справляется с начальными ресурсами. Хорошо строит и добывает нужные ему ресурсы.'
+  },
+  { 
+    id: 4, 
+    name: 'paata1234', 
+    kills: 2, 
+    deaths: 11, 
+    playtime: '3ч', 
+    level: 69, 
+    online: true,
+    description: 'Идей у него много но нет возможности их реализовать. Хорошо добывает ресурсы, но часто ленится.'
+  },
+  { 
+    id: 5, 
+    name: 'kors666', 
+    kills: 0, 
+    deaths: 0, 
+    playtime: '0ч', 
+    level: 1, 
+    online: false,
+    description: 'Новичок на сервере. Статистика пока не доступна.'
+  },
+  { 
+    id: 6, 
+    name: 'BleW', 
+    kills: 18, 
+    deaths: 7, 
+    playtime: '10ч', 
+    level: 62, 
+    online: true,
+    description: 'Игрок который пытается захватить весь сервер. Идей полно и потихоньку они реализовываются. Пытается убивать игроков, но чаще всего умирает он. Любитель тролить и издеваться над игроками. Построил 40 дверей в которых игрок запутывается и не замечает снизу блока который отсутствует и проваливаются в его трапку. Первый получил булаву на сервере.'
+  },
 ];
 
 const Index = () => {
@@ -163,6 +217,12 @@ const Index = () => {
                           <span className="text-primary font-bold">{player.level}</span>
                         </div>
                         <Progress value={player.level} className="h-3 bg-[#44403C]" />
+                      </div>
+                      
+                      <div className="pt-3 mt-3 border-t-2 border-[#92400E]">
+                        <p className="text-secondary text-xs leading-relaxed">
+                          {player.description}
+                        </p>
                       </div>
                     </div>
                   </div>
