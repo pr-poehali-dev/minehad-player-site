@@ -14,6 +14,7 @@ const mockPlayers = [
     level: 87, 
     online: true,
     achievement: 'ДИКТАТОР',
+    avatar: 'https://cdn.poehali.dev/files/c6fe3d0c-1a46-4fa7-8fe8-2b56303d7284.png',
     description: 'Стример и блогер по серверу MINEHAD любитель строить. Игрок харош в пвп и в пве. Очень быстро реализовывает проекты.'
   },
   { 
@@ -176,7 +177,7 @@ const Index = () => {
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-3">
                         <img 
-                          src="https://cdn.poehali.dev/projects/445c8cd5-9656-4c37-9681-d8b18385d537/files/e4c5182b-86e6-4059-ab42-ced7234006df.jpg"
+                          src={player.avatar || "https://cdn.poehali.dev/projects/445c8cd5-9656-4c37-9681-d8b18385d537/files/e4c5182b-86e6-4059-ab42-ced7234006df.jpg"}
                           alt={player.name}
                           className="h-12 w-12 rounded border-2 border-primary pixelated"
                         />
