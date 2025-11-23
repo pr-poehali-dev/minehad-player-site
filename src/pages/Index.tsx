@@ -26,6 +26,7 @@ const mockPlayers = [
     level: 76, 
     online: true,
     achievement: 'Лунная Звезда',
+    avatar: 'https://cdn.poehali.dev/files/047276ea-05ab-4dd4-bbac-d7a87d4b0af6.png',
     description: 'Очень любит животных! Лучше всех справляется в добыче животных. Не любит пвп, старается избегать его. Самый безопасный и дружелюбный игрок на сервере.'
   },
   { 
