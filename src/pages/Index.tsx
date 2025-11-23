@@ -13,6 +13,7 @@ const mockPlayers = [
     playtime: '23ч', 
     level: 87, 
     online: true,
+    achievement: 'ДИКТАТОР',
     description: 'Стример и блогер по серверу MINEHAD любитель строить. Игрок харош в пвп и в пве. Очень быстро реализовывает проекты.'
   },
   { 
@@ -23,6 +24,7 @@ const mockPlayers = [
     playtime: '9ч', 
     level: 76, 
     online: true,
+    achievement: 'Лунная Звезда',
     description: 'Очень любит животных! Лучше всех справляется в добыче животных. Не любит пвп, старается избегать его. Самый безопасный и дружелюбный игрок на сервере.'
   },
   { 
@@ -33,6 +35,7 @@ const mockPlayers = [
     playtime: '6ч', 
     level: 72, 
     online: false,
+    achievement: 'СКАЛКОВЫЙ МОНСТР',
     description: 'Куча идей которые ему не терпится реализовать! Быстрее всех справляется с начальными ресурсами. Хорошо строит и добывает нужные ему ресурсы.'
   },
   { 
@@ -43,6 +46,7 @@ const mockPlayers = [
     playtime: '3ч', 
     level: 69, 
     online: true,
+    achievement: 'прокрастинатор',
     description: 'Идей у него много но нет возможности их реализовать. Хорошо добывает ресурсы, но часто ленится.'
   },
   { 
@@ -63,6 +67,7 @@ const mockPlayers = [
     playtime: '10ч', 
     level: 62, 
     online: true,
+    achievement: 'Хитрый пушистик',
     description: 'Игрок который пытается захватить весь сервер. Идей полно и потихоньку они реализовываются. Пытается убивать игроков, но чаще всего умирает он. Любитель тролить и издеваться над игроками. Построил 40 дверей в которых игрок запутывается и не замечает снизу блока который отсутствует и проваливаются в его трапку. Первый получил булаву на сервере.'
   },
 ];
@@ -179,6 +184,14 @@ const Index = () => {
                           <h3 className="text-lg font-bold text-[#FCD34D]">
                             #{index + 1} {player.name}
                           </h3>
+                          {player.achievement && (
+                            <div className="flex items-center gap-1 mb-1">
+                              <Icon name="Award" size={14} className="text-[#FCD34D]" />
+                              <span className="text-xs text-[#FCD34D] font-semibold">
+                                {player.achievement}
+                              </span>
+                            </div>
+                          )}
                           <Badge 
                             variant={player.online ? "default" : "secondary"}
                             className={player.online ? 'bg-primary text-[#44403C]' : 'bg-muted text-muted-foreground'}
